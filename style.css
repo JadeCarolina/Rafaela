@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+}
+
+:root {
+    --main-source : "Kaushan Script", cursive;
+    --font-weight: 400;
+    --font-style: normal;
+    --color-: #C5705D;
+    --colo-two: #674188;
+}
+  
+
+body{
+    background-color: #C5705D;
+} 
+
+header{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: #fff; 
+    width: 100%;
+}
+
+
+h1{
+    font-family: var(--main-source);
+    font-weight: var(--font-weight);
+    font-style: var(--font-style);
+    color: var(--color-);
+    font-size: 4rem;
+    text-align: center;   
+
+}
+
+.display{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    justify-content: center; 
+}
+
+.img{
+    display: flex;
+    align-items: center;   
+    justify-content: center; 
+    margin-top: 20px;
+}
+
+img{
+    width: 500px;
+}
+
+.text{  
+   
+    margin-top: 50px;
+    background-color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;    
+    width: 800px;
+    padding: 20px 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    margin-bottom: 80px;
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.margin{
+    margin-left: 80px;
+}
+
+h2{
+    font-family: var(--main-source);
+    font-weight: var(--font-weight);
+    font-style: var(--font-style);
+    color: var(--colo-two);
+    font-size: 2rem;
+    margin-left: 20px;
+}
+
+#moretext{
+    display: none;
+}
+
+.btn{
+    width: 55%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -90px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+a{
+   cursor: pointer;   
+   color: var(--color-);    
+   background-color: #F8EDE3;
+   font-family: var(--font-style);
+   font-optical-sizing: auto;
+   font-weight: weight;
+   font-style: normal; 
+   padding: 20px 20px;
+   border-radius: 10px;
+   box-shadow: 10px rgba(0, 0, 0, 0.2);  
+}
+
+footer{
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 10px  rgba(0, 0, 0, 0.2);
+}
+
+footer p{   
+    font-family: var(--main-source);
+    font-weight: var(--font-weight);
+    font-style: var(--font-style);
+    color: var(--colo-two); 
+}
+
+
+
+@media(max-width: 1024px){
+    
+    
+    .text{  
+        width: 600px;
+    }  
+      
+    
+    }
+
+    @media(max-width: 428px){
+    
+    
+        .text{  
+            width: 300px;
+          
+        }  
+     
+        img{
+            width: 300px;
+        }
+                
+        .container{
+            flex-direction: column;
+        }
+
+        h2{
+            
+            font-size: 1.5rem;
+            margin-left: -10px;
+            margin-top: 20pxs;
+            
+        }
+
+        h1{
+            font-size: 1.5rem;
+           
+        }
+        
+        .margin{
+            margin-left: -10px;
+            width: 250px;
+        }
+        
+        }
